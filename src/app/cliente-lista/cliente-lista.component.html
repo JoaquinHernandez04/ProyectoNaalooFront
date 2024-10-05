@@ -1,0 +1,8 @@
+<h2>Lista de Clientes</h2>
+<ul>
+    <li *ngFor="let cliente of clientes">
+        {{ cliente.nombre }} {{ cliente.apellido }} - {{ cliente.direccion }}
+    </li>
+</ul>
+
+<button (click)="volver()">Volver a cargar cliente</button>

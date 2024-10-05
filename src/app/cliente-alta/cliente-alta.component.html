@@ -1,0 +1,13 @@
+<h2>Alta de Cliente</h2>
+<form (ngSubmit)="guardarCliente()">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" [(ngModel)]="apellido" name="apellido" required>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" [(ngModel)]="direccion" name="direccion" required>
+
+    <button type="submit">Guardar</button>
+</form>
